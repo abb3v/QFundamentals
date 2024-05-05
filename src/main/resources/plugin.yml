@@ -1,0 +1,38 @@
+name: QFundamentals
+version: '${version}'
+main: me.abb3v.qfundamentals.QFundamentals
+api-version: '1.20'
+authors: [Abbev]
+description: Lightweight everyday additions to Minecraft
+folia-supported: true
+
+commands:
+  tpa:
+    description: Sends a teleport request to another player.
+    usage: /tpa <player>
+    permission: qfundamentals.tpa
+    permission-message: You do not have permission to use this command.
+  tpaccept:
+    description: Accepts a pending teleport request.
+    usage: /tpaccept
+    permission: qfundamentals.tpaccept
+    permission-message: You do not have permission to use this command.
+  tpdeny:
+    description: Denies a pending teleport request.
+    usage: /tpdeny
+    permission: qfundamentals.tpdeny
+    permission-message: You do not have permission to use this command.
+  qreload:
+    description: Reloads the configuration and language files.
+    permission: qfundamentals.reload
+
+permissions:
+  qfundamentals.tpa:
+    description: Allows a player to send teleport requests.
+    default: true
+  qfundamentals.tpaccept:
+    description: Allows a player to accept teleport requests.
+    default: true
+  qfundamentals.tpdeny:
+    description: Allows a player to deny teleport requests.
+    default: true

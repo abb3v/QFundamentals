@@ -1,0 +1,20 @@
+[general]
+player_only = "This command can only be used by players."
+
+[TP]
+    [TP.TPA]
+    usage = "Usage: /tpa <player>"
+    request_sent = "Teleport request sent."
+    request_received = "{{requester}} wants to teleport to you. Use /tpaccept to accept."
+    no_player_found = "Player not found or not online."
+    cannot_teleport_self = "You cannot teleport to yourself."
+    request_expired = "Your teleport request to {{target}} has expired."
+
+    [TP.TPACCEPT]
+    no_requests = "No pending teleport requests to accept."
+    teleport_accepted = "Teleport request accepted. Preparing to teleport..."
+    teleport_fail = "Teleportation failed. One of the players is no longer online."
+    teleport_unsafe = "Teleportation failed. The location might be unsafe."
+    teleport_success = "Teleportation successful."
+    requester_accepted = "{{target}} has accepted your teleport request."
+    requester_moved = "Teleportation failed. The requester has moved."
